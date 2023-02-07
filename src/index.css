@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Itim&display=swap');
+
+/* ---reset--- */
+
+* {
+    box-sizing: border-box;
+}
+body {
+   margin: 0;
+    color: white;
+    background-color: #05292e;
+    background-color: #0c010f;
+    font-family: 'Covered By Your Grace', cursive;
+    font-family: 'Itim', cursive;
+    /* color: #40e7a7; */ 
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul {
+    padding-left: 0;
+    list-style: none;
+  
+}
+img {
+    width: 100%;
+    display: block;
+}
+input {
+    outline: none;
+    font-size: inherit;
+    font-family: inherit;
+}
+button {
+    font-family: inherit;
+    border: none;
+}
+
+

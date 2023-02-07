@@ -1,0 +1,125 @@
+.resident_box {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: rgb(77, 255, 0) 0px 2px 10px 0px,
+        rgba(0, 225, 255, 0.5) 0px 2px 25px 0px;
+    margin-bottom: 1rem;
+}
+.resident_box::before {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 150%;
+    background: -webkit-linear-gradient(to right, #00ff0d, #ff8c00, #40e0d0);
+    background: linear-gradient(to right, #00eaff, #7bff00, #40e0d0);
+    animation: glowing01 5s linear infinite;
+    transform-origin: center;
+    animation: glowing 5s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.resident {
+    width: 95%;
+    height: 95%;
+    background: #000814;
+    border-radius: 20px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: rgba(71, 255, 4, 0.4) 0px 30px 60px -12px inset,
+        rgba(5, 202, 246, 0.982) 0px 18px 36px -18px inset;
+}
+
+.resident_header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    min-width: 300px;
+    min-height: 300px;
+    padding: 1rem;
+}
+.resident_img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.resident_img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.resident_container_status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 250px;
+    color: #00afc6;
+}
+.resident_status {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+.resident_circle {
+    display: block;
+    width: 15px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+.unknown {
+    background-color: #aaa;
+}
+.Alive {
+    background-color: #23b702;
+}
+.Dead {
+    background-color: rgb(179, 3, 3);
+}
+.resident_body {
+    width: 100%;
+    box-shadow: rgb(255, 170, 0) 0px 2px 10px 0px,
+        rgba(0, 225, 255, 0.5) 0px 2px 25px 0px;
+    color: #23b702;
+    height: 200px;
+
+    padding: 0rem 0.5rem 1rem;
+}
+.resident_name {
+    font-size: 1.3rem;
+    text-align: center;
+    color: #23b702;
+    margin-bottom: 0.1rem;
+}
+.resident_list {
+    display: grid;
+    gap: 0.1rem;
+    padding-bottom: 0.5rem;
+}
+.resident_item {
+    display: flex;
+    gap: 0.5rem;
+    color: #00afc6;
+}
+.resident_label {
+    color: aliceblue;
+}

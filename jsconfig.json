@@ -1,0 +1,6 @@
+{
+    "compilerOptions": {
+        "baseUrl": "src"
+    }
+}
+// {decodeURi(name)} se utiliza para quitar letras o palabras q no tienen nada q ver con el nombre}
