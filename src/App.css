@@ -1,169 +1,176 @@
 .app_loading {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: inherit;
-    gap: 2rem;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  gap: 2rem;
 }
 
 .app_rotate {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    border: 4px solid #53ff03;
-    box-shadow: 1px 2px 10px #0084ff;
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 4px solid #53ff03;
+  box-shadow: 1px 2px 10px #0084ff;
+  overflow: hidden;
 }
 .app_img {
-    width: 300px;
-    animation: rotate 0.9s infinite;
+  width: 300px;
+  animation: rotate 0.9s infinite;
 }
 @keyframes rotate {
-    0% {transform: rotate(0);}
-    100% {transform: rotate(360deg);}
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .app_header {
-    height: 25vh;
-    background-image: url(./img/Rick_and_Morty_logo.png),
-        linear-gradient(180deg, rgba(195, 80, 80, 0) 40%, #010417 100%),
-        url(./img/rick-and-morty-cool-t3ynu5ly9m7jq6e2.jpg);
-    background-position: center, center;
-    background-repeat: no-repeat;
-    background-size: 45vh, cover, cover;
-    animation: float 5s cubic-bezier(0, 0, 0, 0) infinite;
+  height: 25vh;
+  background-image: url(./img/Rick_and_Morty_logo.png),
+    linear-gradient(180deg, rgba(195, 80, 80, 0) 40%, #010417 100%),
+    url(./img/rick-and-morty-cool-t3ynu5ly9m7jq6e2.jpg);
+  background-position: center, center;
+  background-repeat: no-repeat;
+  background-size: 45vh, cover, cover;
+  animation: float 5s cubic-bezier(0, 0, 0, 0) infinite;
 }
 
 @keyframes float {
-    0% {
-        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-        transform: translatey(0px);
-    }
-    50% {
-        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
-        transform: translatey(-20px);
-    }
-    100% {
-        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-        transform: translatey(0px);
-    }
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
 }
 
 .app_container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+    margin-top: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 .app_video {
-    margin-top: 11rem;
-    border-radius: 0.9rem;
-    width: 100%;
-    max-height: 250px;
-    z-index: 1;
+  margin-top: 11rem;
+  border-radius: 0.9rem;
+  width: 100%;
+  max-height: 250px;
+  z-index: 1;
 }
 
 .form {
-    background-image: url(./img/banner1-92911d77.png),
-        url(./img/banner2-77d48b80.png), url(./img/banner3-fbfabd24.png);
-    background-position: left, right, center;
-    background-repeat: no-repeat;
-    background-size: contain, contain, 900px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 10.5rem;
-    max-width: 1000px;
-    margin: 0 auto 8.5rem auto;
-    background-color: transparent;
+  background-image: url(./img/banner1-92911d77.png),
+    url(./img/banner2-77d48b80.png), url(./img/banner3-fbfabd24.png);
+  background-position: left, right, center;
+  background-repeat: no-repeat;
+  background-size: contain, contain, 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10.5rem;
+  max-width: 1000px;
+  margin: 0 auto 8.5rem auto;
+  background-color: transparent;
 }
 .app_input {
-    display: flex;
-    margin-top: 2rem;
-    /* animation: float 5s cubic-bezier(0, 0, 0, -1) infinite; */
+  display: flex;
+  margin-top: 2rem;
+  height: auto;
+  /* animation: float 5s cubic-bezier(0, 0, 0, -1) infinite; */
 }
 .form_img {
-    width: 300px;
-    background-image: url(./img/input.jpg.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  width: 300px;
+  background-image: url(./img/input.jpg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* los elementos inline no heredan color ni en font family a,btm,input */
 .form__input {
-    background-color: transparent;
-    border: none;
-    color: rgb(0, 0, 0);
-    border-radius: 0.5rem 0 0 0.5rem;
+  background-color: transparent;
+  border: none;
+  color: rgb(0, 0, 0);
+  border-radius: 0.5rem 0 0 0.5rem;
 
-    cursor: pointer;
-    padding-left: 3rem;
-    max-width: 200px;
-    height: 50px;
-    margin-bottom: 2.5rem;
+  cursor: pointer;
+  padding-left: 3rem;
+  max-width: 200px;
+  height: 50px;
+  margin-bottom: 2.5rem;
 }
 
 .form__btn {
-    margin-top: 0.5rem;
-    width: 100px;
-    height: 35px;
-    border-radius: 0 0.5rem 0.5rem 0;
-    background-color: transparent;
+  margin-top: 0.5rem;
+  width: 100px;
+  height: 35px;
+  border-radius: 0 0.5rem 0.5rem 0;
+  background-color: transparent;
 
-    color: rgb(5, 244, 236);
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 500;
-    border: none;
+  color: rgb(5, 244, 236);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
 }
 
 .form__btn:hover {
-    font-weight: 700;
-    transform: scale(1.08) 100ms;
+  font-weight: 700;
+  transform: scale(1.08) 100ms;
 }
 
-.app_container {
-    margin-top: 12rem;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
+
 .container_error {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .app__error {
-    font-family: 'Covered By Your Grace', cursive;
-    font-size: 3rem;
-    text-align: center;
-    line-height: 1.8;
+  font-family: "Covered By Your Grace", cursive;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 1.8;
 }
 .img_error {
-    width: 200px;
-    height: 200px;
+  width: 200px;
+  height: 200px;
 }
-.residents_container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 3rem;
-    max-width: 1200px;
-    margin: 0 auto;
+.residents_container,
+.character_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 1200px;
+}
+.results__container {
+    margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.sugerency {
+  margin-top: 1rem;
 }

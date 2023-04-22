@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Itim&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Itim&display=swap");
 
 /* ---reset--- */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
-   margin: 0;
-    color: white;
-    background-color: #05292e;
-    background-color: #0c010f;
-    font-family: 'Covered By Your Grace', cursive;
-    font-family: 'Itim', cursive;
-    /* color: #40e7a7; */ 
+  margin: 0;
+  color: white;
+  background-color: #05292e;
+  background-color: #0c010f;
+  font-family: "Covered By Your Grace", cursive;
+  font-family: "Itim", cursive;
+  /* color: #40e7a7; */
 }
 
 h1,
@@ -20,26 +20,47 @@ h2,
 h3,
 p,
 ul {
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 ul {
-    padding-left: 0;
-    list-style: none;
-  
+  padding-left: 0;
+  list-style: none;
 }
 img {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 input {
-    outline: none;
-    font-size: inherit;
-    font-family: inherit;
+  outline: none;
+  font-size: inherit;
+  font-family: inherit;
 }
 button {
-    font-family: inherit;
-    border: none;
+  font-family: inherit;
+  border: none;
 }
+.display__none{
+  display: none;
+}
+.btn__opacity{
+  opacity: 0.5;
+  }
 
-
+  .container__btn {
+    width: 100%;
+margin-top: 2rem;
+margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+  
+  }
+  .btn__previous,.btn__next{
+    width: 120px;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background-color: rgb(83, 0, 147);
+    color: chartreuse;
+    font-weight: bold
+    
+    ;}
